@@ -1,0 +1,163 @@
+@font-face { font-family: hollywoodStarfire; src: url("../fonts/hollywood-starfire/HOLLYWOOD STARFIRE.ttf"); }
+
+body {
+	/*background-image: url("../img/red-wood-1.jpg");*/
+	background-image: url("../img/wood/1.jpg");
+	background-size: 25% auto;
+	overflow: hidden;
+	overflow-y: scroll; 
+	display: inline-block; 
+}
+
+#banner {
+	position: fixed;
+	top: 0;
+	height: 3.5vw;
+	width: 100%;
+	background-color: #F6E7B3;
+	z-index: 1;
+}
+
+.leftSide {
+
+}
+
+.leftSide i {
+	float: left;
+	padding: 1%;
+	color: #442905;
+}
+
+.leftSide p {
+	display: inline-block;
+	font-size: 1.6em;
+	float: left;
+	padding: 1%;
+	color: #922635;
+	font-family: hollywoodStarfire, serif;
+}
+
+.rightSide {
+	
+}
+
+.rightSide p {
+	text-align: center;
+	display: inline-block;
+	padding: 2%;
+	font-size: 1.4em;
+	font-family: serif;
+}
+
+.rightSide p:hover {
+	color: #666;
+	cursor: pointer;
+}
+
+.activePage {
+	color: #922635;
+}
+
+.paperItem {
+	position: relative;
+	top: 10vh;
+	left: 16.6666555%;
+	background-color: red;
+	display: inline-block;
+	padding: 3%;
+	margin: 5% auto;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.paperItem:before, .paperItem:after
+{
+	width: 40%;
+	height: 10px;
+	content: ' ';
+	left: 12px;
+	bottom: 12px;
+	background: transparent;
+	-webkit-transform: skew(-5deg) rotate(-5deg);
+	-moz-transform: skew(-5deg) rotate(-5deg);
+	-ms-transform: skew(-5deg) rotate(-5deg);
+	-o-transform: skew(-5deg) rotate(-5deg);
+	transform: skew(-5deg) rotate(-5deg);
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	z-index: -1;
+} 
+
+.paperItem:after
+{
+	-webkit-transform: skew(5deg) rotate(5deg);
+	-moz-transform: skew(5deg) rotate(5deg);
+	-ms-transform: skew(5deg) rotate(5deg);
+	-o-transform: skew(5deg) rotate(5deg);
+	transform: skew(5deg) rotate(5deg);
+}
+
+.paperItem h1 {
+	font-family: hollywoodStarfire;
+	font-size: 1.8em;
+	text-align: center;
+	color: #922635;
+	border-bottom: 2px solid #442905;
+	padding-bottom: 2%;
+	margin: 0% 15%;
+}
+
+.paperItem h2 {
+	padding-top: 1%;
+	font-size: 1em;
+	color: #333;
+	text-align: center;
+	font-style: italic;
+}
+
+.paperItem h3 {
+	color: #1A6254;
+	font-family: serif;
+}
+
+.paperItem p {
+
+}
+
+.paperPicture {
+	display: inline-block;
+	width: 70%;
+	margin: 5% 15%;
+}
+
+.paperPicture img {
+	width: 100%;
+	height: auto;
+}
+
+.paperPicture p {
+
+}
+
+.sticky {
+	width: 10vw;
+	height: 10vw;
+	position: absolute;
+	left: 96vw;
+	background-color: #FFFFA5;
+	padding: 1%;
+}
+
+.sticky p {
+	font-family: 'Satisfy', cursive;
+	font-size: 1.3em;
+	display: inline-block;
+}
+
+.sticky p:hover {
+	cursor: pointer;
+	color:#922635;
+}
